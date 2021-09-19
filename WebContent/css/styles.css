@@ -1,0 +1,145 @@
+:root {
+	/* color */ 
+	--background-color: #ffeed9; 
+	--blue-color: #2d386d; 
+	--skyBlue-color: #a5add4; 
+	--pink-color: #ff0055; 
+	--yellow-color: #ffb727;
+	/* font size */ 
+	--font-large: 30px; 
+	--font-medium: 25px; 
+	--font-regular: 18px; 
+	--font-small: 16px; 
+	--font-micro: 10px;
+	/* font weight */ 
+	--weight-bold: 700; 
+	--weight-semi-bold: 600; 
+	--weight-regular: 400;
+
+	/* size */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: 0;
+}
+
+h1 {
+	font-size: var(--font-large);
+}
+
+h2 {
+	font-size: var(--font-medium);
+}
+
+h3 {
+	font-size: var(--font-regular);
+}
+
+input[type="button"], input[type="submit"] {
+	cursor: pointer;
+	padding: 5px 20px;
+	background-color: var(--blue-color);
+	color: var(--yellow-color);
+	font-weight: var(--weight-bold);
+	border-radius: 10px;
+}
+
+input:focus {
+	outline: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+header {
+	width: 480px;
+	height: 200px;
+	background-color: var(--blue-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-image: url('cosmos.jpg');
+}
+
+header .header_text {
+	color: var(--background-color);
+}
+
+main {
+	padding: 20px 0;
+	width: 480px;
+	background-color: var(--background-color);
+	min-height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.main_welcome {
+	margin: 20px 0;
+}
+
+.input_id, .input_pw {
+	width: 300px;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid var(--skyBlue-color);
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.input_id {
+	margin-top: 10px;
+}
+
+main .error_message {
+	color: var(--pink-color);
+	font-size: var(--font-micro);
+	margin-top: 5px;
+}
+
+.div_radio{
+    margin-bottom: 5px;
+}
+
+.test_radio{
+    margin-bottom: 5px;
+}
+
+.tests{
+    margin-bottom: 10px;
+    border-bottom: 1px dotted var(--blue-color);
+    width: 350px;
+}
+.tests>h3{
+    margin-bottom: 10px;
+}
+
+footer {
+	width: 480px;
+	height: 70px;
+	background-color: var(--blue-color);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+footer p {
+	color: var(--background-color);
+	font-size: var(--font-micro);
+}
+footer>p{
+    margin-top: 5px;
+}
