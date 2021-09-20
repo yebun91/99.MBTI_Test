@@ -2,19 +2,17 @@ package com.hanul.test;
 
 public class UserDTO {
 	private String id, pw, name;
-	private int score;
-	
 	
 	public UserDTO() {
 
 	}
 	
-	public UserDTO(String id, String pw, String name, int score) {
+	public UserDTO(String id, String pw, String name) {
 		super();
 		this.id = id;
 		this.pw = pw;
 		this.name = name;
-		this.score = score;
+
 	}
 	public String getId() {
 		return id;
@@ -33,12 +31,6 @@ public class UserDTO {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	public int getScore() {
-		return score;
-	}
-	public void setScore(int score) {
-		this.score = score;
 	}
 
 }

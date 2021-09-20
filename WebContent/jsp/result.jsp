@@ -2,6 +2,7 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.hanul.test.TestDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
@@ -14,7 +15,8 @@
 	<%@ include file="../include/header.jsp" %>
 	<main>
 		<div align="center">
-			<h2>${logininfo.name }님의 점수는 ${score * 10}점입니다.</h2>
+			<h2>${logininfo.name }님은 ${dto.name}입니다.</h2>
+			<p>${dto.describe}</p>
 		</div>
 	</main>
 	<%@ include file="../include/footer.jsp" %>

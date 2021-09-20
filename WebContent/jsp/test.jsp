@@ -23,15 +23,6 @@
 					<div class="div_radio">
 						<input type='radio' name='${i.num }' value='2' />${i.select2 }
 					</div>
-					<div class="div_radio">
-						<input type='radio' name='${i.num }' value='3' />${i.select3 }
-					</div>
-					<div class="div_radio">
-						<input type='radio' name='${i.num }' value='4' />${i.select4 }
-					</div>
-					<div class="div_radio">
-						<input type='radio' name='${i.num }' value='5' />${i.select5 }
-					</div>
 				</div>
 			</div>
 		</c:forEach>

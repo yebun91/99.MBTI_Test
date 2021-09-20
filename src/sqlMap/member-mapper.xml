@@ -4,10 +4,13 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="test.mapper">
   <select id="test" resultType="com.hanul.test.TestDTO">
-    	select * from test
+    	select * from MBTI_TEST
   </select>
   <select id="login" resultType="com.hanul.test.UserDTO">
     	select * from USER_INFO where id = #{id} and pw = #{pw}
+  </select>
+  <select id="planet" resultType="com.hanul.test.planetDTO">
+    	select * from planet
   </select>
 
 </mapper>

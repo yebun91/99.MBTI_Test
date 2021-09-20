@@ -31,10 +31,10 @@ public class TestDAO {
 	}
 	
 	//답 가져오기
-	public int getResult(){
+	public List<planetDTO> getResult(){
 		sql = sqlmapper.openSession();
-		int result = sql.selectOne("test.mapper.result");
-		return result;
+		List<planetDTO> list = sql.selectList("test.mapper.planet");
+		return list;
 	}
 	
 }
